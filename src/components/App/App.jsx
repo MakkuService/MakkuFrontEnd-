@@ -1,10 +1,14 @@
 import React from 'react';
+import logo from '../../images/logo.svg';
 
 import './App.css';
 
 function App() {
   return (
-    <h1>App</h1>
+    <div>
+      <h1>App</h1>
+      <img src={logo} alt="logo" />
+    </div>
   );
 }
 
