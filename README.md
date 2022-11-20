@@ -27,11 +27,17 @@ Netlify
 - run test: `npm run test`
 
 [ ] Header
+
 [ ] Header-slide section
+
 [ ] Slides section
+
 [ ] Pay form
+
 [ ] Carousel
+
 [ ] Contact form
+
 [ ] Footer
 
 [ ] UI button, input-fields, tabs
