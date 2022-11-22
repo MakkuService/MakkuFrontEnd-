@@ -1,15 +1,28 @@
 import React from 'react';
-import logo from '../../images/logo.svg';
 
-import './App.css';
+import {
+  HeaderSection,
+  MainSection,
+  SlidesSection,
+  PaySection,
+  CarouselSection,
+  ContactSection,
+  FooterSection,
+} from '../Sections';
 
-function App() {
+import menuHeader from '../../menuHeader';
+import menuFooter from '../../menuFooter';
+
+export default function App() {
   return (
-    <div>
-      <h1>App</h1>
-      <img src={logo} alt="logo" />
+    <div className="root">
+      <HeaderSection menu={menuHeader} />
+      <MainSection />
+      <SlidesSection />
+      <PaySection />
+      <CarouselSection />
+      <ContactSection />
+      <FooterSection menu={menuFooter} />
     </div>
   );
 }
-
-export default App;

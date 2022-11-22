@@ -1,0 +1,33 @@
+@import "./vendor/normalize.css";
+@import "./vendor/fonts.css";
+
+/* root */
+@import "./blocks/root/root.css";
+
+/* body */
+@import "./blocks/body/body.css";
+
+/* header */
+@import "./blocks/header/header.css";
+
+/* logo */
+@import "./blocks/logo/logo.css";
+
+/* navigation */
+@import "./blocks/navigation/navigation.css";
+
+/* links */
+@import "./blocks/links/links.css";
+@import "./blocks/links/_header/links_header.css";
+@import "./blocks/links/_footer/links_footer.css";
+@import "./blocks/links/__item/links__item.css";
+@import "./blocks/links/__item/_phone/links__item_phone.css";
+@import "./blocks/links/__item/_message/links__item_message.css";
+@import "./blocks/links/__item/_mail/links__item_mail.css";
+
+/* footer */
+@import "./blocks/footer/footer.css";
+
+/* section */
+@import "./blocks/section/_header/section_header.css";
+

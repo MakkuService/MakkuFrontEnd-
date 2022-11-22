@@ -21,3 +21,22 @@
     url("./InterWeb/Inter-Black.woff") format("woff");
   font-weight: 900;
 }
+
+
+@font-face {
+  font-family: Inter;
+  src:
+    url("./Gotham/gotham-medium.woff2") format("woff2"),
+    url("./Gotham/gotham-medium.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Inter;
+  src:
+    url("./Gotham/gotham-black.woff2") format("woff2"),
+    url("./Gotham/gotham-black.woff") format("woff");
+  font-weight: 900;
+}
+
+

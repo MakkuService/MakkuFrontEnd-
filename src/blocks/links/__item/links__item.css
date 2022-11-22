@@ -1,0 +1,14 @@
+.links__item {
+  margin: 0 0 0 28px;
+  padding: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 12px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.links__item:hover {
+  text-decoration: underline;
+}
