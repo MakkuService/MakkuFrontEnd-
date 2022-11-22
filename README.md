@@ -16,7 +16,8 @@
 [![Figma](https://img.shields.io/badge/-Figma-black?style=flat-square&logo=figma)](https://www.figma.com/file/K6vy2Ewmb2hSN9bxOFnNGk/makku?node-id=1%3A2&t=JR3orsm7mB3LZErE-0)
 
 ### Demo
-Netlify
+[![Netlify](https://img.shields.io/badge/-Netlify-black?style=flat-square&logo=netlify)](https://stellar-custard-0d637a.netlify.app/)
+
 
 ### Installation
 
