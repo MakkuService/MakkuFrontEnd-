@@ -1,4 +1,20 @@
 .links__item_message {
   margin: 0 50px;
   padding: 0;
+  position: relative;
+  line-height: 20px;
+}
+
+.links__item_message::before {
+  content: "";
+  margin: 0;
+  padding: 0;
+  height: 20px;
+  width: 20px;
+  background-image: url("../../../../images/message.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  position: absolute;
+  left: -30px;
 }

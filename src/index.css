@@ -13,6 +13,9 @@
 /* logo */
 @import "./blocks/logo/logo.css";
 
+/* title */
+@import "./blocks/title/_contact/title_contact.css";
+
 /* navigation */
 @import "./blocks/navigation/navigation.css";
 
@@ -30,4 +33,18 @@
 
 /* section */
 @import "./blocks/section/_header/section_header.css";
+@import "./blocks/section/_pay/section_pay.css";
+@import "./blocks/section/_carousel/section_carousel.css";
+@import "./blocks/section/_contact/section_contact.css";
 
+/* card */
+@import "./blocks/card/card.css";
+
+/* carousel */
+@import "./blocks/carousel/carousel.css";
+
+/* button */
+@import "./blocks/button/button.css";
+@import "./blocks/button/_card/button_card.css";
+@import "./blocks/button/_contact/button_contact.css";
+@import "./blocks/button/_all/button_all.css";

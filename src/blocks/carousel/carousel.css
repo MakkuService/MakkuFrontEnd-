@@ -1,0 +1,9 @@
+.carousel {
+  margin: 0;
+  padding: 0;
+  background: rgba(124, 193, 208, 0.4);
+}
+
+.swiper-wrapper {
+  margin: 20px;
+}

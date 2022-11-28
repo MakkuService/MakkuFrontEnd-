@@ -1,0 +1,20 @@
+.section_carousel {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+  min-height: 456px;
+}
+
+.section__footer {
+  width: 100%;
+  min-height: 170px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*background-color: bisque;*/
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,12 @@
+.title_contact {
+  /*font-family: 'Gotham';*/
+  align-self: center;
+  max-width: 583px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #000000;
+}
