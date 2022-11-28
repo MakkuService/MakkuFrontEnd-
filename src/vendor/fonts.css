@@ -24,7 +24,7 @@
 
 
 @font-face {
-  font-family: Inter;
+  font-family: Gotham;
   src:
     url("./Gotham/gotham-medium.woff2") format("woff2"),
     url("./Gotham/gotham-medium.woff") format("woff");
@@ -32,10 +32,24 @@
 }
 
 @font-face {
-  font-family: Inter;
+  font-family: Gotham;
   src:
     url("./Gotham/gotham-black.woff2") format("woff2"),
     url("./Gotham/gotham-black.woff") format("woff");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: Roboto;
+  src:
+    url("./Roboto/Roboto-Regular.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Roboto;
+  src:
+    url("./Roboto/Roboto-Bold.woff") format("woff");
   font-weight: 900;
 }
 

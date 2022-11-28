@@ -7,6 +7,10 @@
 /* body */
 @import "./blocks/body/body.css";
 
+/* form */
+@import "./blocks/form/_pay/form_pay.css";
+@import "./blocks/form/_contact/form_contact.css";
+
 /* header */
 @import "./blocks/header/header.css";
 
@@ -15,6 +19,9 @@
 
 /* title */
 @import "./blocks/title/_contact/title_contact.css";
+@import "./blocks/title/_pay/title_pay.css";
+@import "./blocks/title/_slides/title_slides.css";
+@import "./blocks/title/_main/title_main.css";
 
 /* navigation */
 @import "./blocks/navigation/navigation.css";
@@ -30,6 +37,10 @@
 
 /* footer */
 @import "./blocks/footer/footer.css";
+
+/* content */
+@import "./blocks/content/content.css";
+@import "./blocks/content/__paragraph/content__paragraph.css";
 
 /* section */
 @import "./blocks/section/_header/section_header.css";
@@ -48,3 +59,4 @@
 @import "./blocks/button/_card/button_card.css";
 @import "./blocks/button/_contact/button_contact.css";
 @import "./blocks/button/_all/button_all.css";
+@import "./blocks/button/_pay/button_pay.css";

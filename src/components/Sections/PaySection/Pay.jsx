@@ -11,13 +11,13 @@ export default function Pay() {
 
   return (
     <section className="section section_pay">
-      <form>
+      <form className="form form_pay">
         <Tabs />
         <InputField />
-        <Button style="" handler={handlerButton} text="Пожертвовать" />
+        <Button style="button_pay" handler={handlerButton} text="Помочь" />
       </form>
 
-      <h3>Пожертвовать приюту</h3>
+      <h3 className="title title_pay">Пожертвовать приюту</h3>
     </section>
   );
 }

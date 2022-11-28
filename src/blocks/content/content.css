@@ -1,0 +1,26 @@
+.content {
+  max-width: 765px;
+  font-family: 'Roboto';
+  font-style: normal;
+  /* font-weight: 700; */
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+
+  margin-right: auto;
+  margin-left: 80px;
+  margin-top: 273px;
+  position: relative;
+}
+
+.content::before {
+  content: "";
+  width: 164px;
+  height: 164px;
+  position: absolute;
+  background-color: rgba(124, 193, 208, 0.4);
+  border-radius: 50%;
+  left: -46px;
+  top: -38px;
+  z-index: 0;
+}

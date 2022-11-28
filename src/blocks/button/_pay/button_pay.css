@@ -1,0 +1,14 @@
+.button_pay {
+  width: 736px;
+  height: 56px;
+  background: #F5A548;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+  line-height: 19px;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}

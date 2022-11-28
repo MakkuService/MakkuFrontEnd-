@@ -1,0 +1,15 @@
+.title_main {
+  /* font-family: 'Rubik One'; */
+  font-style: bold;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 89px;
+  color: #236371;
+  max-width: 1032px;
+  margin-bottom: 0;
+  margin-top: 90px;
+  margin-left: 67px;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
