@@ -60,3 +60,6 @@
 @import "./blocks/button/_contact/button_contact.css";
 @import "./blocks/button/_all/button_all.css";
 @import "./blocks/button/_pay/button_pay.css";
+
+/* input */
+@import "./blocks/input/input.css";
