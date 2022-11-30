@@ -48,6 +48,10 @@
 @import "./blocks/section/_carousel/section_carousel.css";
 @import "./blocks/section/_contact/section_contact.css";
 
+/* grid */
+@import "./blocks/grid/grid.css";
+@import "./blocks/grid/__item/grid__item.css";
+
 /* card */
 @import "./blocks/card/card.css";
 

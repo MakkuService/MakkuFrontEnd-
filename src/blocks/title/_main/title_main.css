@@ -1,15 +1,32 @@
 .title_main {
   /* font-family: 'Rubik One'; */
-  font-style: bold;
+  /*font-style: bold;*/
   font-weight: 400;
   font-size: 72px;
   line-height: 89px;
   color: #236371;
-  max-width: 1032px;
-  margin-bottom: 0;
-  margin-top: 90px;
-  margin-left: 67px;
-  margin-right: auto;
+  /*max-width: 1032px;*/
+  /*margin: 90px auto 0 67px;*/
   display: flex;
   flex-direction: column;
+  min-height: 630px;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 93px 67px 0;
+}
+
+.title_main::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 67px;
+  width: 600px;
+  height: 346px;
+  background-image: url("../../../images/dog.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 30px;
 }
