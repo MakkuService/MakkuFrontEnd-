@@ -20,8 +20,11 @@
 /* title */
 @import "./blocks/title/_contact/title_contact.css";
 @import "./blocks/title/_pay/title_pay.css";
+@import "./blocks/title/_pay-form/title_pay-form.css";
 @import "./blocks/title/_slides/title_slides.css";
 @import "./blocks/title/_main/title_main.css";
+@import "./blocks/title/_slide/title_slide.css";
+
 
 /* navigation */
 @import "./blocks/navigation/navigation.css";
@@ -48,10 +51,6 @@
 @import "./blocks/section/_carousel/section_carousel.css";
 @import "./blocks/section/_contact/section_contact.css";
 
-/* grid */
-@import "./blocks/grid/grid.css";
-@import "./blocks/grid/__item/grid__item.css";
-
 /* card */
 @import "./blocks/card/card.css";
 
@@ -67,3 +66,24 @@
 
 /* input */
 @import "./blocks/input/input.css";
+
+/* slides */
+@import "./blocks/slides/slides.css";
+
+/* slide */
+@import "./blocks/slide/slide.css";
+@import "./blocks/slide/__title/slide__title.css";
+@import "./blocks/slide/__image/slide__image.css";
+@import "./blocks/slide/_first/slide_first.css";
+
+/* paragraph */
+@import "./blocks/paragraph/paragraph.css";
+
+/* image */
+@import "./blocks/image/_slide/image_slide.css";
+
+/* tabs */
+@import "./blocks/tabs/tabs.css";
+@import "./blocks/tabs/__item/tabs__item.css";
+@import "./blocks/tabs/__item/_active/tabs__item_active.css";
+

@@ -1,8 +1,7 @@
-.button_pay {
-  width: 736px;
+.tabs__item {
+  width: 50%;
   height: 56px;
-  background: #F5A548;
-  border-radius: 8px;
+
   border: none;
   font-size: 20px;
   line-height: 19px;
@@ -11,5 +10,9 @@
   z-index: 1000;
   opacity: 1;
   transition: opacity 0.5s ease;
-  align-self: center;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

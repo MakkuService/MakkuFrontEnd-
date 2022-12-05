@@ -1,8 +1,9 @@
-.grid {
+.slides {
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
+  /*justify-items: flex-end;*/
   list-style: none;
   width: 100%;
 }
