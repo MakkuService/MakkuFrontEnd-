@@ -63,6 +63,9 @@
 @import "./blocks/button/_contact/button_contact.css";
 @import "./blocks/button/_all/button_all.css";
 @import "./blocks/button/_pay/button_pay.css";
+@import "./blocks/button/_outline/button_outline.css";
+@import "./blocks/button/_150/button_150.css";
+@import "./blocks/button/_325/button_325.css";
 
 /* input */
 @import "./blocks/input/input.css";
@@ -86,4 +89,11 @@
 @import "./blocks/tabs/tabs.css";
 @import "./blocks/tabs/__item/tabs__item.css";
 @import "./blocks/tabs/__item/_active/tabs__item_active.css";
+
+/* description */
+@import "./blocks/description/description.css";
+
+/* grid */
+@import "./blocks/grid/grid.css";
+@import "./blocks/grid/_20/grid_20.css";
 
