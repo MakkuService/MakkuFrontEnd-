@@ -5,10 +5,11 @@ export default function InputField({
   value,
   handlerChange,
   placeholder,
+  className,
 }) {
   return (
     <input
-      className="input"
+      className={`input ${className ? className : ''}`}
       name={name}
       value={value}
       placeholder={placeholder}

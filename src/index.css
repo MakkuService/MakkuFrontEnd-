@@ -66,9 +66,11 @@
 @import "./blocks/button/_outline/button_outline.css";
 @import "./blocks/button/_150/button_150.css";
 @import "./blocks/button/_325/button_325.css";
+@import "./blocks/button/_345/button_345.css";
 
 /* input */
 @import "./blocks/input/input.css";
+@import "./blocks/input/_pay/input_pay.css";
 
 /* slides */
 @import "./blocks/slides/slides.css";
@@ -96,4 +98,7 @@
 /* grid */
 @import "./blocks/grid/grid.css";
 @import "./blocks/grid/_20/grid_20.css";
+
+/* m */
+@import "./blocks/m/_20/m_20.css";
 

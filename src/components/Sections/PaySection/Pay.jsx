@@ -11,6 +11,9 @@ export default function Pay() {
   const handlerTest = () => {
     console.log('test');
   };
+  const handlerChange = () => {
+    console.log('change');
+  };
 
   return (
     <section className="section section_pay">
@@ -27,13 +30,33 @@ export default function Pay() {
           <Button style="button_outline button_150" handler={handlerTest} text="1000 P" />
         </div>
         <div className="grid grid_20">
-          <Button style="button_outline button_325" handler={handlerTest} text="5000 P" />
-          <Button style="button_outline button_325" handler={handlerTest} text="Другая сумма" />
+          <Button style="button_outline button_345" handler={handlerTest} text="5000 P" />
+          <Button style="button_outline button_345" handler={handlerTest} text="Другая сумма" />
         </div>
         <h3 className="title_pay-form">ВАШИ ДАННЫЕ</h3>
-        <InputField />
-        <InputField />
-        <Button style="button_pay" handler={handlerButton} text="Помочь" />
+        <InputField
+          className="input_pay"
+          name="name"
+          value=""
+          placeholder="Ваше имя и фамилия"
+          handlerChange={handlerChange}
+        />
+        <InputField
+          className="input_pay"
+          name="email"
+          value=""
+          placeholder="E-mail"
+          handlerChange={handlerChange}
+        />
+        <label>
+          <input type="checkbox" />
+          Соглашаюсь с <span>офертой</span>
+        </label>
+        <label>
+          <input type="checkbox" />
+          Соглашаюсь на обработку моих <span>персональных данных</span>
+        </label>
+        <Button style="button button_pay m_20" handler={handlerButton} text="Помочь" />
       </form>
 
       <h3 className="title title_pay">Пожертвовать приюту</h3>
