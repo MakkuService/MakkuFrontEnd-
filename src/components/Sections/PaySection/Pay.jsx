@@ -1,16 +1,18 @@
 import React from 'react';
 
-import Button from '../../Button';
-import InputField from '../../InputField';
-import Tabs from '../../Tabs';
+import { Button, InputField, Tabs } from '../../ui';
+
+import { sums, anySums } from './data';
 
 export default function Pay() {
   const handlerButton = () => {
     console.log('submit');
   };
+
   const handlerTest = () => {
     console.log('test');
   };
+
   const handlerChange = () => {
     console.log('change');
   };
@@ -24,14 +26,10 @@ export default function Pay() {
         </div>
         <h3 className="title_pay-form">РАЗМЕР ПОЖЕРТВОВАНИЯ</h3>
         <div className="grid">
-          <Button style="button_outline button_150" handler={handlerTest} text="100 P" />
-          <Button style="button_outline button_150" handler={handlerTest} text="200 P" />
-          <Button style="button_outline button_150" handler={handlerTest} text="500 P" />
-          <Button style="button_outline button_150" handler={handlerTest} text="1000 P" />
+          {sums.map((sum) => (<Button style="button_outline button_150" handler={handlerTest} text={`${sum} P`} />))}
         </div>
         <div className="grid grid_20">
-          <Button style="button_outline button_345" handler={handlerTest} text="5000 P" />
-          <Button style="button_outline button_345" handler={handlerTest} text="Другая сумма" />
+          {anySums.map((sum) => (<Button style="button_outline button_345" handler={handlerTest} text={`${sum}${sum === '5000' ? ' P' : ''} `} />))}
         </div>
         <h3 className="title_pay-form">ВАШИ ДАННЫЕ</h3>
         <InputField
@@ -48,14 +46,18 @@ export default function Pay() {
           placeholder="E-mail"
           handlerChange={handlerChange}
         />
-        <label>
-          <input type="checkbox" />
-          Соглашаюсь с <span>офертой</span>
-        </label>
-        <label>
-          <input type="checkbox" />
-          Соглашаюсь на обработку моих <span>персональных данных</span>
-        </label>
+
+        <div className="checkboxes">
+          <label className="checkbox">
+            <input type="checkbox" className="checkbox__input" />
+            Соглашаюсь с<span className="checkbox__link"> офертой</span>
+          </label>
+          <label className="checkbox">
+            <input type="checkbox" className="checkbox__input" />
+            Соглашаюсь на обработку моих<span className="checkbox__link"> персональных данных</span>
+          </label>
+        </div>
+
         <Button style="button button_pay m_20" handler={handlerButton} text="Помочь" />
       </form>
 

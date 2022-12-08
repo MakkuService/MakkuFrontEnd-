@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
-import Button from '../../Button';
-import InputField from '../../InputField';
+import { Button, InputField } from '../../ui';
 
 import fields from './fields';
 
@@ -14,6 +13,7 @@ export default function ContactSection() {
 
   const handlerChange = (e) => {
     const { name, value } = e.target;
+
     setData({ ...data, [name]: value });
   }
 
@@ -23,6 +23,7 @@ export default function ContactSection() {
         Подпишитесь на новости о животных,
         которым необходима экстренная помощь
       </h2>
+
       <form className="form form_contact">
         {fields.map((field) => (
           <InputField

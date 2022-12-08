@@ -1,12 +1,11 @@
 import React from 'react';
 
-import Logo from '../../Logo';
-import Navigation from '../../Navigation';
+import { Logo, Navigation } from '../../ui';
 
 export default function HeaderSection(props) {
   return (
     <section className="section section_header">
-      <Logo/>
+      <Logo />
       <Navigation {...props} />
     </section>
   );

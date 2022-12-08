@@ -1,28 +1,13 @@
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 
-import {
-  HeaderSection,
-  MainSection,
-  SlidesSection,
-  PaySection,
-  CarouselSection,
-  ContactSection,
-  FooterSection,
-} from '../Sections';
-
-import menuHeader from '../../menuHeader';
-import menuFooter from '../../menuFooter';
+import { MainPage, ComponetsPage } from '../../Pages'
 
 export default function App() {
   return (
-    <div className="root">
-      <HeaderSection menu={menuHeader} />
-      <MainSection />
-      <SlidesSection />
-      <PaySection />
-      <CarouselSection />
-      <ContactSection />
-      <FooterSection menu={menuFooter} />
-    </div>
+    <Routes>
+      <Route index element={(<MainPage />)} />
+      <Route path="/ui" element={(<ComponetsPage />)} />
+    </Routes>
   );
 }

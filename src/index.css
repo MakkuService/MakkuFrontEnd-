@@ -80,6 +80,7 @@
 @import "./blocks/slide/__title/slide__title.css";
 @import "./blocks/slide/__image/slide__image.css";
 @import "./blocks/slide/_first/slide_first.css";
+@import "./blocks/slide/_second/slide_second.css";
 
 /* paragraph */
 @import "./blocks/paragraph/paragraph.css";
@@ -102,3 +103,10 @@
 /* m */
 @import "./blocks/m/_20/m_20.css";
 
+/* checkboxes */
+@import "./blocks/checkboxes/checkboxes.css";
+
+/* checkbox */
+@import "./blocks/checkbox/checkbox.css";
+@import "./blocks/checkbox/__input/checkbox__input.css";
+@import "./blocks/checkbox/__link/checkbox__link.css";

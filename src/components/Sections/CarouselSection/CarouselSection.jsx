@@ -1,8 +1,7 @@
 import React from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Card from '../../Card';
-import Button from '../../Button';
+import { Card, Button } from '../../ui';
 
 import array from './array';
 
@@ -31,7 +30,7 @@ export default function CarouselSection() {
         </Swiper>
       </div>
       <div className="section__footer">
-        <Button style="button_all" handler={handlerAll} text="Посмотреть все приюты" />
+        <Button style="button button_all" handler={handlerAll} text="Посмотреть все приюты" />
       </div>
     </section>
   );

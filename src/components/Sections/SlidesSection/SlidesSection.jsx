@@ -21,7 +21,7 @@ export default function SlidesSection() {
           </div>
         </li>
 
-        <li className="slide">
+        <li className="slide slide_second">
           <div className="slide__title">
             <h3 className="title title_slide title_slide_second">
               <span className="paragraph">Сделать доброе</span>

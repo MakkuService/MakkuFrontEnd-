@@ -15,7 +15,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx$/,
+        test: /\.js$|jsx/,
         exclude: /node_modules/,
         use: ["babel-loader"]
       },
@@ -39,7 +39,7 @@ module.exports = {
     static: {
       directory: path.join(__dirname, '/public'),
     },
-    watchFiles: ['src/**/*.tsx'],
+    watchFiles: ['src/**/*.jsx'],
     compress: true,
     hot: true,
     open: true,
