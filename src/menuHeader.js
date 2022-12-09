@@ -4,17 +4,17 @@ const menuHeader = {
     {
       style: '',
       label: 'Найти питомца',
-      url: '#',
+      url: '/findingpet',
     },
 {
   style: '',
     label: 'Найти приют',
-  url: '#',
+    url: '/findingshelter',
 },
 {
   style: '',
     label: 'Информация о приютах',
-  url: '#',
+    url: '/info',
 },
 ]
 };

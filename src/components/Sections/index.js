@@ -5,6 +5,7 @@ import PaySection from './PaySection';
 import CarouselSection from './CarouselSection';
 import ContactSection from './ContactSection';
 import FooterSection from './FooterSection';
+import Content from './Content';
 
 export {
   HeaderSection,
@@ -14,4 +15,5 @@ export {
   CarouselSection,
   ContactSection,
   FooterSection,
+  Content,
 };
