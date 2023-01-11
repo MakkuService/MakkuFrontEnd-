@@ -26,3 +26,21 @@
   }
 }
 
+@media screen and (max-width: 319px) {
+  .section_footer {
+
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .section_footer {
+    flex-direction: column;
+    margin: 10px 10px 10px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .section_footer {
+    margin: 20px 10px 20px;
+  }
+}

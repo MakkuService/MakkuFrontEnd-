@@ -11,3 +11,23 @@
   margin: 40px 0 0;
   padding: 0;
 }
+
+@media screen and (max-width: 319px) {
+  .title_contact {
+
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .title_contact {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .title_contact {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

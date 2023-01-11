@@ -50,6 +50,7 @@
 @import "./blocks/section/_pay/section_pay.css";
 @import "./blocks/section/_carousel/section_carousel.css";
 @import "./blocks/section/_contact/section_contact.css";
+@import "./blocks/section/_footer/section_footer.css";
 
 /* card */
 @import "./blocks/card/card.css";
