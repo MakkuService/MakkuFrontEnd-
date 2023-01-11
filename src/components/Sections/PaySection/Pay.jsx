@@ -26,10 +26,10 @@ export default function Pay() {
         </div>
         <h3 className="title_pay-form">РАЗМЕР ПОЖЕРТВОВАНИЯ</h3>
         <div className="grid">
-          {sums.map((sum) => (<Button style="button_outline button_150" handler={handlerTest} text={`${sum} P`} />))}
+          {sums.map((sum, i) => (<Button key={`sum${i}`} style="button_outline button_150" handler={handlerTest} text={`${sum} P`} />))}
         </div>
         <div className="grid grid_20">
-          {anySums.map((sum) => (<Button style="button_outline button_345" handler={handlerTest} text={`${sum}${sum === '5000' ? ' P' : ''} `} />))}
+          {anySums.map((sum, i) => (<Button key={`sum${i}`} style="button_outline button_345" handler={handlerTest} text={`${sum}${sum === '5000' ? ' P' : ''} `} />))}
         </div>
         <h3 className="title_pay-form">ВАШИ ДАННЫЕ</h3>
         <InputField
