@@ -6,3 +6,23 @@
   margin: 0;
   padding: 0;
 }
+
+@media screen and (max-width: 319px) {
+  .links_header {
+
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .links_header {
+    margin-top: 10px;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .links_header {
+
+  }
+}
