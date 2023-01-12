@@ -5,3 +5,29 @@
   height: 346px;
   border-radius: 30px;
 }
+@media screen and (max-width: 319px) {
+  .image_slide {
+
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .image_slide {
+    max-width: 300px;
+    max-height: 190px;
+    border-radius: 0;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .image_slide {
+    max-width: 600px;
+    max-height: 346px;
+    border-radius: 0;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .image_slide {
+  }
+}

@@ -3,7 +3,24 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  /*justify-items: flex-end;*/
   list-style: none;
   width: 100%;
+}
+
+@media screen and (max-width: 319px) {
+  .title_slides {
+
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .title_slides {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .title_slides {
+
+  }
 }

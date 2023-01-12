@@ -1,6 +1,5 @@
 .section_carousel {
-  margin: 0;
-  margin-top: 94px;
+  margin: 94px 0 0;
   padding: 0;
   width: 100%;
   background-color: #FFFFFF;
@@ -15,7 +14,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*background-color: bisque;*/
   margin: 0;
   padding: 0;
+}
+
+@media screen and (max-width: 319px) {
+  .section_carousel {
+
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .section_carousel {
+    min-height: auto;
+    margin: 10px 0 0;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .section_carousel {
+
+  }
 }

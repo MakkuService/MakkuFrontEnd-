@@ -1,3 +1,25 @@
 .button_345 {
   max-width: 345px;
 }
+
+@media screen and (max-width: 319px) {
+  .button_345 {
+
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .button_345 {
+    max-width: 140px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .button_345 {
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .button_345 {
+  }
+}

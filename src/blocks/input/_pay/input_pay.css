@@ -2,3 +2,26 @@
   width: 100%;
   margin: 20px 0 0;
 }
+
+@media screen and (max-width: 319px) {
+  .input_pay {
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .input_pay {
+    min-width: 300px;
+    max-width: 320px;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .input_pay {
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .input_pay {
+  }
+}

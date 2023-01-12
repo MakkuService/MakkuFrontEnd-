@@ -10,3 +10,29 @@
 .slide:nth-child(2) {
   flex-direction: row-reverse;
 }
+
+@media screen and (max-width: 319px) {
+  .slide {
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .slide {
+    flex-direction: column;
+    height: auto;
+  }
+  .slide:nth-child(2) {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .slide {
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .slide {
+  }
+}

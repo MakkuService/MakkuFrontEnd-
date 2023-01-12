@@ -21,3 +21,29 @@
 .button_all:hover {
   opacity: 0.85;
 }
+
+@media screen and (max-width: 319px) {
+  .button_all {
+
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .button_all {
+    min-width: 300px;
+    max-width: 320px;
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .button_all {
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .button_all {
+  }
+}

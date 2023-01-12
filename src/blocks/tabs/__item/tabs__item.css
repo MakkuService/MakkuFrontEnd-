@@ -1,7 +1,6 @@
 .tabs__item {
   width: 50%;
   height: 56px;
-
   border: none;
   font-size: 20px;
   line-height: 19px;
@@ -11,8 +10,32 @@
   opacity: 1;
   transition: opacity 0.5s ease;
   border-radius: 8px;
-
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 319px) {
+  .tabs__item {
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .tabs__item {
+    /*min-width: 300px;*/
+    /*max-width: 320px;*/
+    /*width: auto;*/
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .tabs__item {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .tabs__item {
+    font-size: 18px;
+  }
 }

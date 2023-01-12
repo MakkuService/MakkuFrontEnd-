@@ -17,7 +17,7 @@ export default function CarouselSection() {
       <div className="carousel">
         <Swiper
           spaceBetween={20}
-          slidesPerView={3}
+          slidesPerView={1}
           // onSlideChange={() => console.log('slide change')}
           // onSwiper={(swiper) => console.log(swiper)}
         >

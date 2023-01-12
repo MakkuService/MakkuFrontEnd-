@@ -17,8 +17,35 @@
   opacity: 1;
   transition: opacity 0.5s ease;
   align-self: center;
+  box-sizing: border-box;
 }
 
 .button_contact:hover {
   opacity: 0.85;
+}
+
+@media screen and (max-width: 319px) {
+  .button_contact {
+
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .button_contact {
+    min-width: 300px;
+    max-width: 320px;
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .button_contact {
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .button_contact {
+  }
 }

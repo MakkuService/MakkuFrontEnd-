@@ -13,3 +13,29 @@
   transition: opacity 0.5s ease;
   align-self: center;
 }
+
+@media screen and (max-width: 319px) {
+  .button_pay {
+
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .button_pay {
+    min-width: 300px;
+    max-width: 320px;
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .button_pay {
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .button_pay {
+  }
+}

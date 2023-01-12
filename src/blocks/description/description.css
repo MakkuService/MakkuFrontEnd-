@@ -7,3 +7,31 @@
   margin: 10px 0 0;
   padding: 0;
 }
+
+@media screen and (max-width: 319px) {
+  .description {
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .description {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 320px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .description {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .description {
+    font-size: 18px;
+  }
+}
