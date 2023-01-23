@@ -33,7 +33,10 @@
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .slide_first {
     font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
   }
+
   .slide_first:after {
     left: -150px;
     bottom: -150px;

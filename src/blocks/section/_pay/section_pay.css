@@ -5,5 +5,31 @@
   align-items: center;
   margin: 0;
   padding: 0;
+}
 
+@media screen and (max-width: 319px) {
+  .section_pay {
+
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .section_pay {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .section_pay {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .section_pay {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 }

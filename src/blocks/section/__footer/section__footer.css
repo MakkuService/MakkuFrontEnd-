@@ -1,0 +1,17 @@
+.section__footer {
+  width: 100%;
+  min-height: 170px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .section__footer {
+    min-height: 120px;
+  }
+}

@@ -9,11 +9,12 @@
   z-index: 1000;
   opacity: 1;
   transition: opacity 0.5s ease;
-  border-radius: 8px;
+  border-radius: 7px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 @media screen and (max-width: 319px) {
   .tabs__item {
   }
@@ -24,7 +25,9 @@
     /*min-width: 300px;*/
     /*max-width: 320px;*/
     /*width: auto;*/
+    height: 46px;
     font-size: 14px;
+    line-height: 16px;
   }
 }
 

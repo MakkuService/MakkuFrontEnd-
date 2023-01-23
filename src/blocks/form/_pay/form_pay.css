@@ -6,4 +6,22 @@
   flex-direction: column;
   align-items: center;
   max-width: 736px;
+  width: 100%;
+}
+
+@media screen and (max-width: 319px) {
+  .form_pay {
+
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .form_pay {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .form_pay {
+  }
 }

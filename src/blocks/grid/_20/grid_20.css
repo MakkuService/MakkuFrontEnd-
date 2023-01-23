@@ -1,3 +1,15 @@
 .grid_20 {
   margin: 20px 0 0;
 }
+
+@media screen and (max-width: 319px) {
+  .grid_20 {
+
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .grid_20 {
+    margin-top: 10px;
+  }
+}

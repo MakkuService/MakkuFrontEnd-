@@ -10,12 +10,13 @@
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .button_345 {
-    max-width: 140px;
+    max-width: calc(50% - 5px);
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .button_345 {
+    max-width: calc(50% - 11px);
   }
 }
 

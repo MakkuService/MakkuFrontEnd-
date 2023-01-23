@@ -3,13 +3,11 @@
   padding: 0;
   width: auto;
   height: auto;
-
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 44px;
   text-align: center;
-
   display: flex;
   flex-direction: column;
   justify-content: center;

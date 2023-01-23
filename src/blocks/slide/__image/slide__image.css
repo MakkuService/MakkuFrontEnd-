@@ -18,6 +18,8 @@
     height: 100%;
     width: auto;
     max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
