@@ -16,8 +16,7 @@
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .slide__image {
     height: 100%;
-    width: auto;
-    max-width: 320px;
+    width: calc(100% - 20px);
     margin-left: auto;
     margin-right: auto;
   }
@@ -26,8 +25,10 @@
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .slide__image {
     height: 100%;
-    width: 100%;
+    width: calc(100% - 40px);
     max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

@@ -11,8 +11,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 93px 67px 0;
-  position: relative;
-  display: flex;
 }
 
 .title_main::after {
@@ -39,7 +37,6 @@
     font-size: 28px;
     line-height: 36px;
     width: auto;
-    max-width: 320px;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 50px;
@@ -48,6 +45,7 @@
     position: initial;
     text-align: center;
   }
+
   .title_main::after {
     content: "";
     margin: 40px auto 20px;
@@ -67,13 +65,13 @@
     font-size: 28px;
     line-height: 36px;
     width: auto;
-    max-width: 768px;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 50px;
     padding: 0;
     min-height: 360px;
     position: initial;
+    text-align: center;
   }
 
   .title_main::after {
@@ -93,5 +91,42 @@
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .title_main {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .title_main::after {
+    content: "";
+    position: initial;
+    width: 600px;
+    height: 346px;
+    margin: 40px auto;
+    background-image: url("../../../images/dog.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .title_main {
+    font-size: 62px;
+    line-height: 79px;
+  }
+
+  .title_main::after {
+    content: "";
+    position: initial;
+    width: 600px;
+    height: 346px;
+    margin: 40px auto;
+    margin-right: 0;
+    margin-top: 0;
+    background-image: url("../../../images/dog.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
   }
 }
