@@ -28,6 +28,7 @@
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .links__item_mail {
     margin: 0;
+    font-size: 12px;
   }
 
   .links__item_mail::before {
@@ -35,17 +36,27 @@
     width: 10px;
     background-size: 10px;
     left: -15px;
-    top: 2px;
+    top: 6px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .links__item_mail {
-    margin: 0 30px;
-    font-size: 10px;
+    margin: 0 15px 0 10px;
+    font-size: 12px;
   }
 
   .links__item_mail::before {
+    height: 15px;
+    width: 15px;
+    background-size: 15px;
+    left: -20px;
+    top: 2px;
+  }
+}
 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .links__item_mail {
+    font-size: 13px;
   }
 }

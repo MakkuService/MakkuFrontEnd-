@@ -44,3 +44,10 @@
     margin: 20px 10px 20px;
   }
 }
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .section_footer {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
