@@ -26,40 +26,22 @@
 - run dev: `npm run dev`
 - run test: `npm run test`
 
-[X] Header
-
-[X] Header-slide section
-
-[X] Slides section
-
-[X] Pay form
-
-[X] Carousel
-
-[ ] Carousel - Mobile, tablets, desktop
-
-[X] Contact form
-
-[X] Footer
-
-[ ] Lazy-loading
-
-[ ] API
-
-[ ] UI button, input-fields, tabs
-
-[ ] Mobile, tablets, desktop
-
-[ ] SignUp page
-
-[ ] SignIn page
-
-[ ] Confirm password page
-
-[ ] Reset password page
-
-[ ] User page
-
-[ ] Edit-user page
-
-[ ] Oauth page
+- [X] Header
+- [X] Header-slide section
+- [X] Slides section
+- [X] Pay form
+- [X] Carousel
+- [X] Carousel - Mobile, tablets, desktop
+- [X] Contact form
+- [X] Footer
+- [ ] Lazy-loading
+- [ ] API
+- [ ] UI button, input-fields, tabs
+- [ ] Mobile, tablets, desktop
+- [ ] SignUp page
+- [ ] SignIn page
+- [ ] Confirm password page
+- [ ] Reset password page
+- [ ] User page
+- [ ] Edit-user page
+- [ ] Oauth page
