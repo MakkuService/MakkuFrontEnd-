@@ -20,7 +20,7 @@
   border-radius: 50%;
   left: -46px;
   top: -38px;
-  z-index: 0;
+  z-index: -1;
 }
 
 @media screen and (max-width: 319px) {
@@ -50,5 +50,7 @@
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .content {
+    margin-left: 80px;
+    margin-right: 80px;
   }
 }

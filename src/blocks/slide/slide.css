@@ -41,5 +41,11 @@
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .slide {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .slide:nth-child(2) {
+    flex-direction: column;
   }
 }

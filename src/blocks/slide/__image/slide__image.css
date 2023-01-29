@@ -34,5 +34,10 @@
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .slide__image {
+    height: 100%;
+    width: calc(100% - 40px);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

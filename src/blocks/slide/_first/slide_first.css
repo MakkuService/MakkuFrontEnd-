@@ -39,15 +39,21 @@
 
   .slide_first:after {
     display: none;
-    /* left: -150px;
-    bottom: -150px;
-    z-index: 1000;
-    width: 200px;
-    height: 200px; */
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
+  .slide_first {
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .slide_first:after {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .slide_first {
     margin-left: auto;
     margin-right: auto;
