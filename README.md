@@ -24,6 +24,7 @@
 - Install dependencies: `npm install`
 - Launch: `npm start`
 - run dev: `npm run dev`
+- run build: `npm run build`
 - run test: `npm run test`
 
 - [X] Header
