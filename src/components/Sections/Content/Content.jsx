@@ -2,13 +2,14 @@ import React from 'react';
 
 import { HeaderSection, FooterSection } from '../index';
 
-import menuHeader from '../../../menuHeader';
-import menuFooter from '../../../menuFooter';
+import menuHeader from '../../../mock/menuHeader';
+import menuFooter from '../../../mock/menuFooter';
 
-export default function Content({ component }) {
+export default function Content({ component, title }) {
   return (
     <div className="root">
       <HeaderSection menu={menuHeader} />
+      {title ? <h1 className="title_content">{title}</h1> : null}
       { component }
       <FooterSection menu={menuFooter} />
     </div>

@@ -4,6 +4,6 @@ import { Content } from '../../components/Sections';
 
 export default function InfoPage() {
   return (
-    <Content component={<></>} />
+    <Content component={<></>} title="Информация о приютах" />
   );
 }

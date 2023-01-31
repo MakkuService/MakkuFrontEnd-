@@ -14,20 +14,20 @@
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .section_carousel {
     min-height: auto;
-    margin: 10px 10px 0;
+    /*margin: 10px 10px 0;*/
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .section_carousel {
-    margin-left: 20px;
-    margin-right: 20px;
+    /*margin-left: 20px;*/
+    /*margin-right: 20px;*/
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .section_carousel {
-    margin-left: 40px;
-    margin-right: 40px;
+    /*margin-left: 40px;*/
+    /*margin-right: 40px;*/
   }
 }

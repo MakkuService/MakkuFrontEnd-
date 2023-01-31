@@ -4,6 +4,6 @@ import { Content } from '../../components/Sections';
 
 export default function FindingPage() {
   return (
-    <Content component={<></>} />
+    <Content component={<>...</>} title="Найти питомца" />
   );
 }

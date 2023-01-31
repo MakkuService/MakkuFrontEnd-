@@ -22,7 +22,12 @@
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .section_header {
-    margin: 43px 10px 0;
+    margin: 43px 20px 0;
   }
 }
 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .section_header {
+    margin: 43px 40px 0;
+  }
+}

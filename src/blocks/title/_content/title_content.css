@@ -1,38 +1,34 @@
-.links__item {
-  margin: 0 0 0 28px;
-  padding: 0;
+.title_content {
+  font-family: 'Gotham';
   font-style: normal;
   font-weight: 400;
-  line-height: 12px;
+  font-size: 24px;
   color: #000000;
-  text-decoration: none;
-  display: flex;
-}
-
-.links__item:hover {
-  text-decoration: underline;
+  margin: 50px 70px 0;
+  padding: 0;
 }
 
 @media screen and (max-width: 319px) {
-  .links__item {
+  .title_content {
 
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
-  .links__item {
-    margin: 5px 0 0;
+  .title_content {
+    flex-direction: column;
+    margin: 43px 10px 0;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
-  .links__item {
-    margin: 0 0 0 10px;
+  .title_content {
+    margin: 43px 20px 0;
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .links__item {
-    margin: 0 0 0 10px;
+  .title_content {
+    margin: 43px 40px 0;
   }
 }

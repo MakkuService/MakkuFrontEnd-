@@ -1,0 +1,30 @@
+.form_sign {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px auto;
+  padding: 0;
+  max-width: 736px;
+  width: 100%;
+}
+
+@media screen and (max-width: 319px) {
+  .form_sign {
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .form_sign {
+    margin: 20px 0;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .form_sign {
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .form_sign {
+  }
+}

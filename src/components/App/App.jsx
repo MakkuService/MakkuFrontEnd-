@@ -1,26 +1,26 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
+import Paths from '../../utils/paths';
 
 import {
   MainPage,
   FindingPage,
-  ComponetsPage,
   InfoPage,
   SignUpPage,
-  SignInPage
+  SignInPage,
+  ComponetsPage,
 } from '../../Pages'
 
 export default function App() {
   return (
     <Routes>
       <Route index element={(<MainPage />)} />
-      <Route path="/findingpet" element={(<FindingPage />)} />
-      <Route path="/findingshelter" element={(<FindingPage />)} />
-      <Route path="/info" element={(<InfoPage />)} />
-      <Route path="/signup" element={(<SignUpPage />)} />
-      <Route path="/signin" element={(<SignInPage />)} />
-
-      <Route path="/ui" element={(<ComponetsPage />)} />
+      <Route path={Paths.FIND.PET} element={(<FindingPage />)} />
+      <Route path={Paths.FIND.SHELTER} element={(<FindingPage />)} />
+      <Route path={Paths.INFO} element={(<InfoPage />)} />
+      <Route path={Paths.SIGN.UP} element={(<SignUpPage />)} />
+      <Route path={Paths.SIGN.IN} element={(<SignInPage />)} />
+      <Route path={Paths.UI} element={(<ComponetsPage />)} />
     </Routes>
   );
 }

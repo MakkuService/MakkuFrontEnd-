@@ -1,13 +1,15 @@
 import React from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { useWindowDimensions, getVisualProps } from '../../../hook/useWindowDimensions';
 import { Card, Button } from '../../ui';
 
 import array from './array';
-
 import 'swiper/css';
 
 export default function CarouselSection() {
+  const inLine = getVisualProps(useWindowDimensions());
+
   const handlerAll = () => {
     console.log('show all');
   };
@@ -17,7 +19,7 @@ export default function CarouselSection() {
       <div className="carousel">
         <Swiper
           spaceBetween={20}
-          slidesPerView={1}
+          slidesPerView={inLine.cards}
           // onSlideChange={() => console.log('slide change')}
           // onSwiper={(swiper) => console.log(swiper)}
         >

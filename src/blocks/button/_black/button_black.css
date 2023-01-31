@@ -1,47 +1,40 @@
-.button_contact {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
+.button_black {
   width: 100%;
   height: 56px;
   background: #2A303C;
-  border: 1px solid rgba(162, 162, 162, 0.5);
   border-radius: 8px;
-  color: #FFFFFF;
+  border: none;
+  font-size: 20px;
+  line-height: 19px;
   text-transform: uppercase;
   cursor: pointer;
   z-index: 1000;
   opacity: 1;
   transition: opacity 0.5s ease;
   align-self: center;
-  box-sizing: border-box;
-}
-
-.button_contact:hover {
-  opacity: 0.85;
+  color: #FFFFFF;
 }
 
 @media screen and (max-width: 319px) {
-  .button_contact {
+  .button_black {
 
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
-  .button_contact {
+  .button_black {
     height: 46px;
+    font-size: 14px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
-  .button_contact {
+  .button_black {
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .button_contact {
+  .button_black {
+
   }
 }
