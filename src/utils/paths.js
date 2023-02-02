@@ -10,8 +10,10 @@ const Paths = {
     CONFIRM: '/password-confirm',
   },
   FIND: {
-    PET: '/find-pet',
-    SHELTER: '/find-shelter',
+    PET: '/find-pet/:id',
+    PETS: '/find-pets',
+    SHELTERS: '/find-shelters',
+    SHELTER: '/find-shelter/:id',
   },
   INFO: '/info',
   OAUTH: '/oauth',

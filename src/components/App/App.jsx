@@ -4,6 +4,8 @@ import Paths from '../../utils/paths';
 
 import {
   MainPage,
+  ShelterPage,
+  PetPage,
   FindingPage,
   InfoPage,
   SignUpPage,
@@ -15,8 +17,10 @@ export default function App() {
   return (
     <Routes>
       <Route index element={(<MainPage />)} />
-      <Route path={Paths.FIND.PET} element={(<FindingPage />)} />
-      <Route path={Paths.FIND.SHELTER} element={(<FindingPage />)} />
+      <Route path={Paths.FIND.PETS} element={(<FindingPage />)} />
+      <Route path={Paths.FIND.SHELTERS} element={(<FindingPage />)} />
+      <Route path={Paths.FIND.SHELTER} element={(<ShelterPage />)} />
+      <Route path={Paths.FIND.PET} element={(<PetPage />)} />
       <Route path={Paths.INFO} element={(<InfoPage />)} />
       <Route path={Paths.SIGN.UP} element={(<SignUpPage />)} />
       <Route path={Paths.SIGN.IN} element={(<SignInPage />)} />

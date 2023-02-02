@@ -1,18 +1,18 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useWindowDimensions, getVisualProps } from '../../../hook/useWindowDimensions';
 import { Card, Button } from '../../ui';
 
-import array from './array';
+import Paths from '../../../utils/paths';
+import array from '../../../mock/array';
 import 'swiper/css';
 
 export default function CarouselSection() {
+  const navigate = useNavigate();
   const inLine = getVisualProps(useWindowDimensions());
-
-  const handlerAll = () => {
-    console.log('show all');
-  };
+  const handlerAll = () => navigate(Paths.FIND.SHELTERS);
 
   return (
     <section className="section section_carousel">
@@ -20,12 +20,13 @@ export default function CarouselSection() {
         <Swiper
           spaceBetween={20}
           slidesPerView={inLine.cards}
+          // onClick={() => console.log('click')}
           // onSlideChange={() => console.log('slide change')}
           // onSwiper={(swiper) => console.log(swiper)}
         >
           {array.map((x) => (
               <SwiperSlide key={x}>
-                <Card data={x} />
+                <Card data={{ id: x }} />
               </SwiperSlide>
             )
           )}

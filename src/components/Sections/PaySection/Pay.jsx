@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Button, InputField, Tabs } from '../../ui';
 
-import { sums, anySums } from './data';
+import { sums, anySums } from '../../../mock/dataPay';
 
 export default function Pay() {
   const handlerButton = () => {

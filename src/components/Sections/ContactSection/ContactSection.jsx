@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { Button, InputField } from '../../ui';
 
-import fields from './fields';
+import fields from '../../../mock/fields';
 
 export default function ContactSection() {
   const [data, setData] = useState({ name: '', phone: '', mail: '' });

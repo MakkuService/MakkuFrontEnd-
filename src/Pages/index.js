@@ -4,6 +4,8 @@ import InfoPage from './InfoPage';
 import ComponetsPage from './ComponetsPage';
 import SignInPage from './SignIn';
 import SignUpPage from './SignUp';
+import ShelterPage from './ShelterPage';
+import PetPage from './PetPage';
 
 export {
   MainPage,
@@ -12,4 +14,6 @@ export {
   InfoPage,
   SignInPage,
   SignUpPage,
+  ShelterPage,
+  PetPage,
 };

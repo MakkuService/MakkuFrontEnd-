@@ -11,7 +11,7 @@ const menuHeader = {
     {
       style: '',
       label: 'Найти приют',
-      url: Paths.FIND.SHELTER,
+      url: Paths.FIND.SHELTERS,
     },
     {
       style: '',
