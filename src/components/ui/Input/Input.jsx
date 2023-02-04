@@ -12,7 +12,7 @@ const Input = forwardRef((props, ref) => {
     className,
   } = props;
   return (
-    <div className="inbox">
+    <div className="inbox m_20">
       {label &&
         <label htmlFor={id} className={`inbox__label${errorText ? ' inbox__label_error' : ''}`}>
           {label}

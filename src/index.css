@@ -114,3 +114,10 @@
 @import "./blocks/checkbox/checkbox.css";
 @import "./blocks/checkbox/__input/checkbox__input.css";
 @import "./blocks/checkbox/__link/checkbox__link.css";
+
+/* error-boundary */
+@import "./blocks/error-boundary/error-boundary.css";
+@import "./blocks/error-boundary/__title/error-boundary__title.css";
+@import "./blocks/error-boundary/__message/error-boundary__message.css";
+@import "./blocks/error-boundary/__block/error-boundary__block.css";
+

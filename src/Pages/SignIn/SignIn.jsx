@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useForm, Controller } from 'react-hook-form';
 import { NavLink } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { useErrorHandler } from 'react-error-boundary';
 
 import { Button, Input } from '../../components/ui';
+import { useSignInMutation } from '../../store';
 import Paths from '../../utils/paths';
+import useUser from '../../hook/useUser';
 
 const inputs = [
   {
@@ -30,6 +34,10 @@ const inputs = [
 ];
 
 export default function SignIn() {
+  const errorHandler = useErrorHandler();
+  const navigate = useNavigate();
+  const userData = useUser();
+  const [signIn] = useSignInMutation();
   const { control, handleSubmit } = useForm({
     defaultValues: {
       email: '',
@@ -37,8 +45,19 @@ export default function SignIn() {
     },
   });
 
-  const onSubmit = handleSubmit(async (data) => {
+  const onSubmit = handleSubmit(async ({ email, password }) => {
+    try {
+      await signIn({ email, password });
+      navigate('/');
+    } catch ({ status, data: { reason } }) {
+      errorHandler(new Error(`${status}: ${reason}`));
+    }
+  });
 
+  useEffect(() => {
+    if (userData) {
+      navigate('/');
+    }
   });
 
   return (

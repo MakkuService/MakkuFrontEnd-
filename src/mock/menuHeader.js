@@ -6,7 +6,7 @@ const menuHeader = {
     {
       style: '',
       label: 'Найти питомца',
-      url: Paths.FIND.PET,
+      url: Paths.FIND.PETS,
     },
     {
       style: '',

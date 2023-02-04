@@ -3,7 +3,11 @@ import { useParams } from 'react-router-dom';
 
 import { Content } from '../../components/Sections';
 
-export default function PetPage() {
+import withUser from '../../hoc/withUser';
+
+function PetPage() {
   const { id }  = useParams();
   return (<Content component={<>{`Pet ${id}`}</>} title={`Pet ${id}`} />);
 }
+
+export default withUser(PetPage, true);

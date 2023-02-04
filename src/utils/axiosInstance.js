@@ -1,0 +1,34 @@
+import axios from 'axios';
+
+const axiosInstance = axios.create({
+  // withCredentials: true,
+  'Access-Control-Allow-Credentials': true,
+});
+
+axiosInstance.interceptors.response.use(
+  (response) => response,
+  (e) => {
+    const error = e;
+
+    if (!error.response) {
+      return Promise.reject(error);
+    }
+
+    if (error.response.status === 401) {
+      console.error('Code 401 (Unauthorized)');
+      error.response.data = 'Unauthorized error';
+    }
+
+    if (error.response.status >= 500 && error.response.status < 600) {
+      error.response.data = 'Server error';
+    }
+
+    return Promise.reject(error);
+  },
+);
+
+export default function getAxiosInstance(baseURL = '/') {
+  axiosInstance.defaults.baseURL = baseURL;
+
+  return axiosInstance;
+}
