@@ -9,14 +9,14 @@ const authApiEndpoints = authApi
     endpoints: (builder) => ({
       signUp: builder.mutation({
         query: (data) => ({
-          url: '/signup',
+          url: '/register',
           method: 'POST',
           data,
         }),
       }),
       signIn: builder.mutation({
         query: (data) => ({
-          url: '/Login',
+          url: '/login',
           method: 'POST',
           data,
           async onSuccess(dispatch, res) {

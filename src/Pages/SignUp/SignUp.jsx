@@ -2,26 +2,29 @@ import React from 'react';
 import { useForm, Controller } from 'react-hook-form';
 import { NavLink } from 'react-router-dom';
 
-import {Button, Input } from '../../components/ui';
+import { Button, Input } from '../../components/ui';
+
+import { useSignUpMutation } from '../../store';
+import useUser from '../../hook/useUser';
 import Paths from '../../utils/paths';
 
 const inputs = [
   {
-    name: 'login',
-    label: 'Login',
+    name: 'userName',
+    label: 'userName',
     pattern: {
       value: /^[a-z0-9_-]{3,15}$/,
       message: 'Login is invalid',
     },
     required: true,
-    autoComplete: 'username',
+    autoComplete: 'userName',
   },
   {
     name: 'email',
     label: 'E-mail',
     pattern: {
       value: /[a-z0-9._%+-]+@[a-z0-9.-]+[.{0}][a-z]{2,3}$/,
-      message: 'Email is invalid',
+      message: 'userName is invalid',
     },
     required: true,
     autoComplete: 'current-email',
@@ -40,16 +43,32 @@ const inputs = [
 ];
 
 export default function SignUp() {
+  const errorHandler = useErrorHandler();
+  const navigate = useNavigate();
+  const userData = useUser();
+  const [signUp] = useSignUpMutation();
+
   const { control, handleSubmit } = useForm({
     defaultValues: {
-      login: '',
+      userName: '',
       email: '',
       password: '',
     },
   });
 
   const onSubmit = handleSubmit(async (data) => {
+    try {
+      await signUp({ userName, email, password });
+      navigate('/');
+    } catch ({ status, data: { reason } }) {
+      errorHandler(new Error(`${status}: ${reason}`));
+    }
+  });
 
+  useEffect(() => {
+    if (userData) {
+      navigate('/');
+    }
   });
 
   return (
