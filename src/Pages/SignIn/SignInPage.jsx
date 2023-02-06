@@ -6,7 +6,7 @@ import SignIn from './SignIn';
 import withUser from '../../hoc/withUser';
 
 function SignInPage() {
-  return (<Content component={<SignIn />} title="SignIn" />);
+  return (<Content component={<SignIn />} />);
 }
 
 export default withUser(SignInPage, false);

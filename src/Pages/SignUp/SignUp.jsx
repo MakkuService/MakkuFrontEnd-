@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useForm, Controller } from 'react-hook-form';
 import { NavLink } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { useErrorHandler } from 'react-error-boundary';
 
 import { Button, Input } from '../../components/ui';
 
@@ -11,7 +13,7 @@ import Paths from '../../utils/paths';
 const inputs = [
   {
     name: 'userName',
-    label: 'userName',
+    placeholder: 'userName',
     pattern: {
       value: /^[a-z0-9_-]{3,15}$/,
       message: 'Login is invalid',
@@ -21,7 +23,7 @@ const inputs = [
   },
   {
     name: 'email',
-    label: 'E-mail',
+    placeholder: 'E-mail',
     pattern: {
       value: /[a-z0-9._%+-]+@[a-z0-9.-]+[.{0}][a-z]{2,3}$/,
       message: 'userName is invalid',
@@ -31,7 +33,7 @@ const inputs = [
   },
   {
     name: 'password',
-    label: 'Password',
+    placeholder: 'Password',
     pattern: {
       value: /^[a-zA-Z0-9_-]{3,15}$/,
       message: 'Password is invalid',
@@ -73,7 +75,7 @@ export default function SignUp() {
 
   return (
     <form className="form form_sign" onSubmit={onSubmit}>
-      <h3 className="title_pay-form">Регистрация</h3>
+      <h3 className="title_sign">Регистрация</h3>
       {inputs.map((input) => (
         <Controller
           key={input.name}
@@ -87,14 +89,14 @@ export default function SignUp() {
             <Input
               {...field}
               {...input}
-              className="input input_pay"
+              className="input"
               errorText={fieldState.error?.message}
             />
           )}
         />
       ))}
-      <Button style="button button_black m_20" submit text="Зарегистрироваться" />
-      <NavLink className="links__item links_footer m_20" to={Paths.SIGN.IN}>
+      <Button style="button button_black m_40" submit text="Зарегистрироваться" />
+      <NavLink className="links__item links_footer m_40" to={Paths.SIGN.IN}>
         Войти
       </NavLink>
     </form>

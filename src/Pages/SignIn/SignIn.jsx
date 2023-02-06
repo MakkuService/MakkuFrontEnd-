@@ -12,7 +12,7 @@ import useUser from '../../hook/useUser';
 const inputs = [
   {
     name: 'email',
-    label: 'E-mail',
+    placeholder: 'E-mail',
     pattern: {
       value: /[a-z0-9._%+-]+@[a-z0-9.-]+[.{0}][a-z]{2,3}$/,
       message: 'Email is invalid',
@@ -22,7 +22,7 @@ const inputs = [
   },
   {
     name: 'password',
-    label: 'Password',
+    placeholder: 'Password',
     pattern: {
       value: /^[a-zA-Z0-9_-]{3,15}$/,
       message: 'Password is invalid',
@@ -62,7 +62,7 @@ export default function SignIn() {
 
   return (
     <form className="form form_sign" onSubmit={onSubmit}>
-      <h3 className="title_pay-form">Вход</h3>
+      <h3 className="title_sign">Вход</h3>
       {inputs.map((input) => (
         <Controller
           key={input.name}
@@ -76,14 +76,14 @@ export default function SignIn() {
             <Input
               {...field}
               {...input}
-              className="input input_pay"
+              className="input"
               errorText={fieldState.error?.message}
             />
           )}
         />
       ))}
-      <Button style="button button_black m_20" text="Войти" submit />
-      <NavLink className="links__item links_footer m_20" to={Paths.SIGN.UP}>
+      <Button style="button button_black m_40" text="Войти" submit />
+      <NavLink className="links__item links_footer m_40" to={Paths.SIGN.UP}>
         Зарегистрироваться
       </NavLink>
     </form>

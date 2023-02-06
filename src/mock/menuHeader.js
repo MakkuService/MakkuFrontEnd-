@@ -20,8 +20,13 @@ const menuHeader = {
     },
     {
       style: '',
-      label: 'SignIn',
+      label: 'Войти',
       url: Paths.SIGN.IN,
+    },
+    {
+      style: '',
+      label: 'Регистрация',
+      url: Paths.SIGN.UP,
     },
   ],
 };

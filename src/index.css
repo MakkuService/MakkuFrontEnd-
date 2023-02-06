@@ -26,6 +26,7 @@
 @import "./blocks/title/_main/title_main.css";
 @import "./blocks/title/_slide/title_slide.css";
 @import "./blocks/title/_content/title_content.css";
+@import "./blocks/title/_sign/title_sign.css";
 
 /* navigation */
 @import "./blocks/navigation/navigation.css";

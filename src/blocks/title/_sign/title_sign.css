@@ -1,0 +1,31 @@
+.title_sign {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 64px;
+  text-align: center;
+  color: #000000;
+  margin: 80px 0 40px;
+  padding: 0;
+}
+
+@media screen and (max-width: 319px) {
+  .title_sign {
+
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .title_sign {
+    font-size: 20px;
+    line-height: 19px;
+    margin: 40px 0 0;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .title_sign {
+
+  }
+}

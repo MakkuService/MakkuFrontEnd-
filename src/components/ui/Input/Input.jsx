@@ -3,6 +3,7 @@ import React, { forwardRef } from 'react';
 const Input = forwardRef((props, ref) => {
   const {
     errorText = '',
+    name,
     type,
     onChange,
     label,
@@ -14,7 +15,7 @@ const Input = forwardRef((props, ref) => {
   return (
     <div className="inbox m_20">
       {label &&
-        <label htmlFor={id} className={`inbox__label${errorText ? ' inbox__label_error' : ''}`}>
+        <label htmlFor={id} className={`input__label${errorText ? ' input__label_error' : ''}`}>
           {label}
         </label>}
       <input
@@ -23,11 +24,11 @@ const Input = forwardRef((props, ref) => {
         type={type}
         value={value}
         placeholder={placeholder}
-        className={`${className}${errorText ? ' inbox__input_error' : ''}`}
+        className={`${className}${errorText ? ' input_error' : ''}`}
       />
       {
         errorText
-        && <span className={`${label}-input-error inbox__input_error-help`}>{ errorText }</span>
+        && <span className={`${name}-input-error input_error-help`}>{ errorText }</span>
       }
     </div>
   );
