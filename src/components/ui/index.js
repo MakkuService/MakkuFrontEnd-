@@ -5,6 +5,7 @@ import InputField from './InputField';
 import Logo from './Logo';
 import Navigation from './Navigation';
 import Tabs from './Tabs';
+import IconMenu from './IconMenu';
 
 export {
   Button,
@@ -14,4 +15,5 @@ export {
   Logo,
   Navigation,
   Tabs,
+  IconMenu,
 };

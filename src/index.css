@@ -105,9 +105,6 @@
 @import "./blocks/grid/grid.css";
 @import "./blocks/grid/_20/grid_20.css";
 
-/* m */
-@import "./blocks/m/_20/m_20.css";
-
 /* checkboxes */
 @import "./blocks/checkboxes/checkboxes.css";
 
@@ -122,3 +119,12 @@
 @import "./blocks/error-boundary/__message/error-boundary__message.css";
 @import "./blocks/error-boundary/__block/error-boundary__block.css";
 
+/* oauth */
+@import "./blocks/oauth/oauth.css";
+@import "./blocks/oauth/__icon/oauth__icon.css";
+@import "./blocks/oauth/__icon/_google/oauth__icon_google.css";
+@import "./blocks/oauth/__icon/_vk/oauth__icon_vk.css";
+@import "./blocks/oauth/__icon/_ya/oauth__icon_ya.css";
+
+/* m */
+@import "./blocks/m/_20/m_20.css";

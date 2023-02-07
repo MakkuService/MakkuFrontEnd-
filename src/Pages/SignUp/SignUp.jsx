@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { useErrorHandler } from 'react-error-boundary';
 
-import { Button, Input } from '../../components/ui';
+import { Button, Input, IconMenu } from '../../components/ui';
 
 import { useSignUpMutation } from '../../store';
 import useUser from '../../hook/useUser';
@@ -96,6 +96,7 @@ export default function SignUp() {
         />
       ))}
       <Button style="button button_black m_40" submit text="Зарегистрироваться" />
+      <IconMenu />
       <NavLink className="links__item links_footer m_40" to={Paths.SIGN.IN}>
         Войти
       </NavLink>
