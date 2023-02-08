@@ -1,11 +1,12 @@
-import MainPage from './MainPage';
-import FindingPage from './FindingPage';
-import InfoPage from './InfoPage';
-import ComponetsPage from './ComponetsPage';
+import MainPage from './Main';
+import FindingPage from './Finding';
+import InfoPage from './Info';
+import ComponetsPage from './Componets';
 import SignInPage from './SignIn';
 import SignUpPage from './SignUp';
-import ShelterPage from './ShelterPage';
-import PetPage from './PetPage';
+import ShelterPage from './Shelter';
+import PetPage from './Pet';
+import NotFoundPage from './404';
 
 export {
   MainPage,
@@ -16,4 +17,5 @@ export {
   SignUpPage,
   ShelterPage,
   PetPage,
+  NotFoundPage,
 };

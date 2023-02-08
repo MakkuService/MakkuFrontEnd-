@@ -10,6 +10,7 @@ import {
   InfoPage,
   SignUpPage,
   SignInPage,
+  NotFoundPage,
   ComponetsPage,
 } from '../../Pages'
 
@@ -25,6 +26,7 @@ export default function App() {
       <Route path={Paths.SIGN.UP} element={(<SignUpPage />)} />
       <Route path={Paths.SIGN.IN} element={(<SignInPage />)} />
       <Route path={Paths.UI} element={(<ComponetsPage />)} />
+      <Route path="*" element={(<NotFoundPage />)} />
     </Routes>
   );
 }

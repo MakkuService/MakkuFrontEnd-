@@ -27,9 +27,13 @@
 @import "./blocks/title/_slide/title_slide.css";
 @import "./blocks/title/_content/title_content.css";
 @import "./blocks/title/_sign/title_sign.css";
+@import "./blocks/title/_not-found/title_not-found.css";
 
 /* navigation */
 @import "./blocks/navigation/navigation.css";
+
+/* link */
+@import "./blocks/link/link.css";
 
 /* links */
 @import "./blocks/links/links.css";
@@ -126,5 +130,15 @@
 @import "./blocks/oauth/__icon/_vk/oauth__icon_vk.css";
 @import "./blocks/oauth/__icon/_ya/oauth__icon_ya.css";
 
+/* icon */
+@import "./blocks/icon/icon.css";
+@import "./blocks/icon/_google/icon_google.css";
+@import "./blocks/icon/_vk/icon_vk.css";
+@import "./blocks/icon/_ya/icon_ya.css";
+@import "./blocks/icon/__label/icon__label.css";
+
 /* m */
 @import "./blocks/m/_20/m_20.css";
+
+/* not-found */
+@import "./blocks/not-found/notfound.css";
