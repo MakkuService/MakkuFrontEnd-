@@ -7,6 +7,7 @@ import ComponetsPage from './Componets';
 import SignInPage from './SignIn';
 import SignUpPage from './SignUp';
 import OauthPage from './Oauth';
+import ProfilePage from './Profile';
 import NotFoundPage from './404';
 
 export {
@@ -15,6 +16,7 @@ export {
   FindingPage,
   ShelterPage,
   PetPage,
+  ProfilePage,
   ComponetsPage,
   SignInPage,
   SignUpPage,

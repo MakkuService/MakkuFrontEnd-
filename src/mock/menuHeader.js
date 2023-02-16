@@ -18,16 +18,6 @@ const menuHeader = {
       label: 'Информация о приютах',
       url: Paths.INFO,
     },
-    {
-      style: '',
-      label: 'Войти',
-      url: Paths.SIGN.IN,
-    },
-    {
-      style: '',
-      label: 'Регистрация',
-      url: Paths.SIGN.UP,
-    },
   ],
 };
 

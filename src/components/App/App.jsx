@@ -13,7 +13,7 @@ import {
   NotFoundPage,
   OauthPage,
   ComponetsPage,
-
+  ProfilePage,
 } from '../../Pages'
 
 export default function App() {
@@ -25,6 +25,7 @@ export default function App() {
       <Route path={Paths.FIND.SHELTER} element={(<ShelterPage />)} />
       <Route path={Paths.FIND.PET} element={(<PetPage />)} />
       <Route path={Paths.INFO} element={(<InfoPage />)} />
+      <Route path={Paths.PROFILE} element={(<ProfilePage />)} />
       <Route path={Paths.SIGN.UP} element={(<SignUpPage />)} />
       <Route path={Paths.SIGN.IN} element={(<SignInPage />)} />
       <Route path={Paths.OAUTH} element={(<OauthPage />)} />
