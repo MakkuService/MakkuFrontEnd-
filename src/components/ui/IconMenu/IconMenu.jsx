@@ -1,7 +1,7 @@
 import React from 'react';
 
-export default function IconMenu() {
-  const onRedirect = () => console.log('redirect');
+export default function IconMenu({ onClick }) {
+
   const buttons = [
     {
       label: 'vk',
@@ -24,7 +24,7 @@ export default function IconMenu() {
           <button
             type="button"
             className={`icon icon_${label}`}
-            onClick={() => onRedirect(src)}
+            onClick={() => onClick(src)}
           >
             <span className="icon__label">
               {label}

@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { useErrorHandler } from 'react-error-boundary';
 
-import { Button, Input, IconMenu } from '../../components/ui';
+import { Button, Input, IconMenu, Logo } from '../../components/ui';
 import { useSignInMutation } from '../../store';
 import Paths from '../../utils/paths';
 import useUser from '../../hook/useUser';
@@ -54,6 +54,11 @@ export default function SignIn() {
     }
   });
 
+  const onOauthClick = (url) => {
+    console.log(url);
+    navigate(Paths.OAUTH);
+  };
+
   useEffect(() => {
     if (userData) {
       navigate('/');
@@ -62,6 +67,7 @@ export default function SignIn() {
 
   return (
     <form className="form form_sign" onSubmit={onSubmit}>
+      <Logo className="logo_center" />
       <h3 className="title_sign">Вход</h3>
       {inputs.map((input) => (
         <Controller
@@ -82,10 +88,13 @@ export default function SignIn() {
           )}
         />
       ))}
-      <Button style="button button_black m_40" text="Войти" submit />
-      <IconMenu />
+      <Button style="button button_black m_80" text="Войти" submit />
+      <IconMenu onClick={onOauthClick}/>
       <NavLink className="links__item links_footer m_40" to={Paths.SIGN.UP}>
         Зарегистрироваться
+      </NavLink>
+      <NavLink className="links__item links_footer m_20" to={Paths.PASSWORD.RESET}>
+        Забыли пароль
       </NavLink>
     </form>
   );

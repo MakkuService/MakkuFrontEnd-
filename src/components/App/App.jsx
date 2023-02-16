@@ -11,7 +11,9 @@ import {
   SignUpPage,
   SignInPage,
   NotFoundPage,
+  OauthPage,
   ComponetsPage,
+
 } from '../../Pages'
 
 export default function App() {
@@ -25,6 +27,7 @@ export default function App() {
       <Route path={Paths.INFO} element={(<InfoPage />)} />
       <Route path={Paths.SIGN.UP} element={(<SignUpPage />)} />
       <Route path={Paths.SIGN.IN} element={(<SignInPage />)} />
+      <Route path={Paths.OAUTH} element={(<OauthPage />)} />
       <Route path={Paths.UI} element={(<ComponetsPage />)} />
       <Route path="*" element={(<NotFoundPage />)} />
     </Routes>

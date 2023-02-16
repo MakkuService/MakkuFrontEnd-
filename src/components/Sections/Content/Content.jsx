@@ -7,11 +7,11 @@ import menuFooter from '../../../mock/menuFooter';
 
 export default function Content({ component, title }) {
   return (
-    <div className="root">
+    <>
       <HeaderSection menu={menuHeader} />
       {title ? <h1 className="title_content">{title}</h1> : null}
       { component }
       <FooterSection menu={menuFooter} />
-    </div>
+    </>
   );
 }

@@ -1,22 +1,11 @@
 .title_sign {
-  /* font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 64px;
-  text-align: center;
-  color: #000000;
-  margin: 80px 0 40px;
-  padding: 0; */
   font-family: 'Gotham';
   font-style: normal;
-  /* font-weight: 400; */
-  font-size: 20px;
-  line-height: 12px;
-  margin: 0;
-  margin-top: 50px;
+  font-size: 28px;
+  line-height: 30px;
+  margin: 100px 0 40px;
   padding: 0;
-  /* identical to box height, or 62% */
+  text-align: center;
 }
 
 @media screen and (max-width: 319px) {

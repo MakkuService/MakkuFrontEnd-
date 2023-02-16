@@ -8,7 +8,12 @@
   width: 56px;
   height: 56px;
   border-radius: 8px;
-  border: 1px solid #a2a2a2;
+  border: solid 1px #eaeaea;
   background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.icon:hover {
+  background-color: #eaeaea;
 }

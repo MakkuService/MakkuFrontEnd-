@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { useErrorHandler } from 'react-error-boundary';
 
-import { Button, Input, IconMenu } from '../../components/ui';
+import { Button, Input, IconMenu, Logo } from '../../components/ui';
 
 import { useSignUpMutation } from '../../store';
 import useUser from '../../hook/useUser';
@@ -58,6 +58,11 @@ export default function SignUp() {
     },
   });
 
+  const onOauthClick = (url) => {
+    console.log(url);
+    navigate(Paths.OAUTH);
+  };
+
   const onSubmit = handleSubmit(async (data) => {
     try {
       await signUp({ userName, email, password });
@@ -75,6 +80,7 @@ export default function SignUp() {
 
   return (
     <form className="form form_sign" onSubmit={onSubmit}>
+      <Logo className="logo_center" />
       <h3 className="title_sign">Регистрация</h3>
       {inputs.map((input) => (
         <Controller
@@ -95,8 +101,8 @@ export default function SignUp() {
           )}
         />
       ))}
-      <Button style="button button_black m_40" submit text="Зарегистрироваться" />
-      <IconMenu />
+      <Button style="button button_black m_80" submit text="Зарегистрироваться" />
+      <IconMenu onClick={onOauthClick} />
       <NavLink className="links__item links_footer m_40" to={Paths.SIGN.IN}>
         Войти
       </NavLink>

@@ -27,22 +27,34 @@
 - run build: `npm run build`
 - run test: `npm run test`
 
-- [X] Header
+#### Current 
+- [ ] Icons OAUTH
+- [ ] API OAUTH // services
+- [ ] Page OAUTH
+- [ ] Page Confirm
+- [ ] API AUTH - password reset / confirm
+- [ ] CAPTCHA ??
+- [ ] Pages auth - phone / tab / desktop
+- [ ] Testing sign-in/up pages
+- [ ] Profile page
+- [ ] Edit profile info // page
+- [ ] Edit password // page
+- [ ] Avatar // default // user 
+- [ ] Logo without text
+
+#### General
+- [X] Header, Footer
 - [X] Header-slide section
 - [X] Slides section
 - [X] Pay form
 - [X] Carousel
 - [X] Carousel - Mobile, tablets, desktop
 - [X] Contact form
-- [X] Footer
+- [X] SignUp / SignIn pages 
 - [ ] Lazy-loading
 - [ ] API
 - [ ] UI button, input-fields, tabs
 - [ ] Mobile, tablets, desktop
-- [ ] SignUp page
-- [ ] SignIn page
-- [ ] Confirm password page
-- [ ] Reset password page
-- [ ] User page
-- [ ] Edit-user page
+- [ ] Confirm, Reset password page
+- [ ] User page, Edit-user page
 - [ ] Oauth page

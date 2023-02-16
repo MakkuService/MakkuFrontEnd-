@@ -19,7 +19,13 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  transition: 0.5s ease;
 }
+
+.input:hover {
+  background-color: #efefef;
+}
+
 .input__label {
   font-size: 12px;
   padding: 5px 0;
@@ -33,6 +39,7 @@
 
 .input_error {
   color: red;
+  border-color: red;
 }
 .input_error-help {
   color: red;

@@ -9,10 +9,13 @@
   text-transform: uppercase;
   cursor: pointer;
   z-index: 1000;
-  opacity: 1;
+  opacity: 0.8;
   transition: opacity 0.5s ease;
   align-self: center;
   color: #FFFFFF;
+}
+.button_black:hover {
+  opacity: 1;
 }
 
 @media screen and (max-width: 319px) {

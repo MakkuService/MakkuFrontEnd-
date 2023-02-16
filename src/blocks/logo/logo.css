@@ -28,3 +28,8 @@
     height: 30px;
   }
 }
+
+.logo_center {
+  align-self: center;
+  margin-left: 30px;
+}

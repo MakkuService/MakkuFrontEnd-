@@ -1,12 +1,16 @@
+
 .form_sign {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 40px auto;
-  margin-top: 100px;
-  padding: 0;
-  max-width: 736px;
+  margin: 40px auto 40px;
+  max-width: 480px;
   width: 100%;
+  font-family: Gotham, Inter, "Helvetica Neue", Arial, sans-serif;
+  background-color: #FFFFFF;
+  padding: 40px;
+  border-radius: 10px;
+  border: solid 1px #eaeaea;
 }
 
 @media screen and (max-width: 319px) {
