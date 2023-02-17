@@ -1,21 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Button, InputField, Tabs } from '../../ui';
 
 import { sums, anySums } from '../../../mock/dataPay';
 
 export default function Pay() {
-  const handlerButton = () => {
-    console.log('submit');
-  };
-
-  const handlerTest = () => {
-    console.log('test');
-  };
-
-  const handlerChange = () => {
-    console.log('change');
-  };
+  const [currentSum, setCurrentSum] = useState(0);
+  const handlerButton = () => console.log('submit') ;
+  const handlerChange = () => console.log('test');
+  const handlerTest = (sum) => {
+    console.log(Number(sum), currentSum);
+    setCurrentSum(Number(sum));
+  }
 
   return (
     <section className="section section_pay">
@@ -26,10 +22,28 @@ export default function Pay() {
         </div>
         <h3 className="title_pay-form">РАЗМЕР ПОЖЕРТВОВАНИЯ</h3>
         <div className="grid">
-          {sums.map((sum, i) => (<Button key={`sum${i}`} style="button_outline button_150" handler={handlerTest} text={`${sum} P`} />))}
+          {sums.map((sum, i) => (
+            <Button
+              key={`sum${i}`}
+              style={`button_150${currentSum === Number(sum)
+                ? ' button_outline button_outline_checked'
+                : ' button_outline'}`}
+              handler={() => handlerTest(sum)}
+              text={`${sum} P`}
+            />
+          ))}
         </div>
         <div className="grid grid_20">
-          {anySums.map((sum, i) => (<Button key={`sum${i}`} style="button_outline button_345" handler={handlerTest} text={`${sum}${sum === '5000' ? ' P' : ''} `} />))}
+          {anySums.map((sum, i) => (
+            <Button
+              key={`sum${i}`}
+              style={`button_345${currentSum === Number(sum)
+                ? ' button_outline button_outline_checked'
+                : ' button_outline'}`}
+              handler={() => handlerTest(sum)}
+              text={`${sum}${sum === '5000' ? ' P' : ''} `}
+            />
+          ))}
         </div>
         <h3 className="title_pay-form">ВАШИ ДАННЫЕ</h3>
         <InputField
@@ -58,7 +72,7 @@ export default function Pay() {
           </label>
         </div>
 
-        <Button style="button button_pay m_20" handler={handlerButton} text="Помочь" />
+        <Button style="button_pay m_20" handler={handlerButton} text="Помочь" />
       </form>
 
       <h3 className="title title_pay">Пожертвовать приюту</h3>

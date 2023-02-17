@@ -6,7 +6,7 @@ import {
   PaySection,
   CarouselSection,
   ContactSection,
-} from '../../components/Sections';
+} from '../Sections';
 
 export default function Main() {
   return (

@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { Navigation } from '../../ui';
+import { Navigation } from '../ui';
 
-export default function FooterSection(props) {
+export default function Footer(props) {
   return (
     <section className="section section_footer">
       <div className="footer">

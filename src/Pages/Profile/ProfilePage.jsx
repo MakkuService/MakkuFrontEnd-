@@ -1,14 +1,14 @@
 import React from 'react';
 
 import { Content } from '../../components/Sections';
+import Profile from '../../components/Profile';
+
 import withUser from '../../hoc/withUser';
 
 function ProfilePage() {
   return (<Content component={
     <div className="not-found">
-      <h2 className="title title_not-found">
-        ProfilePage
-      </h2>
+      <Profile />
     </div>
   } title="Profile" />);
 }

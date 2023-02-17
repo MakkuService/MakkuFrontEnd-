@@ -9,9 +9,18 @@
   text-transform: uppercase;
   cursor: pointer;
   z-index: 1000;
-  opacity: 1;
+  opacity: 0.8;
   transition: opacity 0.5s ease;
   align-self: center;
+}
+
+.button_outline:hover {
+  opacity: 1;
+}
+.button_outline_checked {
+  border: 1px solid #F5A548;
+  color: #F5A548;
+  opacity: 1;
 }
 
 @media screen and (max-width: 319px) {
@@ -38,3 +47,5 @@
     font-size: 18px;
   }
 }
+
+

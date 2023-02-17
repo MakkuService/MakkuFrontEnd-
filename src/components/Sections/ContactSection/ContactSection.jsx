@@ -6,10 +6,7 @@ import fields from '../../../mock/fields';
 
 export default function ContactSection() {
   const [data, setData] = useState({ name: '', phone: '', mail: '' });
-
-  const handlerButton = () => {
-    console.log('submit');
-  };
+  const handlerButton = () => console.log('submit');
 
   const handlerChange = (e) => {
     const { name, value } = e.target;

@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { Logo, Navigation } from '../../ui';
+import { Logo, Navigation } from '../ui';
 
-export default function HeaderSection(props) {
+export default function Header(props) {
   return (
     <section className="section section_header">
       <Logo />

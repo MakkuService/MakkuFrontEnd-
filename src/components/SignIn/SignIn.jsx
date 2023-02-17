@@ -4,29 +4,18 @@ import { NavLink } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { useErrorHandler } from 'react-error-boundary';
 
-import { Button, Input, IconMenu, Logo } from '../../components/ui';
-
-import { useSignUpMutation } from '../../store';
-import useUser from '../../hook/useUser';
+import { Button, Input, IconMenu, Logo } from '../ui';
+import { useSignInMutation } from '../../store';
 import Paths from '../../utils/paths';
+import useUser from '../../hook/useUser';
 
 const inputs = [
-  {
-    name: 'userName',
-    placeholder: 'userName',
-    pattern: {
-      value: /^[a-z0-9_-]{3,15}$/,
-      message: 'Login is invalid',
-    },
-    required: true,
-    autoComplete: 'userName',
-  },
   {
     name: 'email',
     placeholder: 'E-mail',
     pattern: {
       value: /[a-z0-9._%+-]+@[a-z0-9.-]+[.{0}][a-z]{2,3}$/,
-      message: 'userName is invalid',
+      message: 'Email is invalid',
     },
     required: true,
     autoComplete: 'current-email',
@@ -44,33 +33,31 @@ const inputs = [
   },
 ];
 
-export default function SignUp() {
+export default function SignIn() {
   const errorHandler = useErrorHandler();
   const navigate = useNavigate();
   const userData = useUser();
-  const [signUp] = useSignUpMutation();
-
+  const [signIn] = useSignInMutation();
   const { control, handleSubmit } = useForm({
     defaultValues: {
-      userName: '',
       email: '',
       password: '',
     },
+  });
+
+  const onSubmit = handleSubmit(async ({ email, password }) => {
+    try {
+      await signIn({ email, password });
+      navigate('/');
+    } catch ({ status, data: { reason } }) {
+      errorHandler(new Error(`${status}: ${reason}`));
+    }
   });
 
   const onOauthClick = (url) => {
     console.log(url);
     navigate(Paths.OAUTH);
   };
-
-  const onSubmit = handleSubmit(async (data) => {
-    try {
-      await signUp({ userName, email, password });
-      navigate('/');
-    } catch ({ status, data: { reason } }) {
-      errorHandler(new Error(`${status}: ${reason}`));
-    }
-  });
 
   useEffect(() => {
     if (userData) {
@@ -81,7 +68,7 @@ export default function SignUp() {
   return (
     <form className="form form_sign" onSubmit={onSubmit}>
       <Logo className="logo_center" />
-      <h3 className="title_sign">Регистрация</h3>
+      <h3 className="title_sign">Вход</h3>
       {inputs.map((input) => (
         <Controller
           key={input.name}
@@ -101,10 +88,13 @@ export default function SignUp() {
           )}
         />
       ))}
-      <Button style="button button_black m_80" submit text="Зарегистрироваться" />
-      <IconMenu onClick={onOauthClick} />
-      <NavLink className="links__item links_footer m_40" to={Paths.SIGN.IN}>
-        Войти
+      <Button style="button button_black m_80" text="Войти" submit />
+      <IconMenu onClick={onOauthClick}/>
+      <NavLink className="links__item links_footer m_40" to={Paths.SIGN.UP}>
+        Зарегистрироваться
+      </NavLink>
+      <NavLink className="links__item links_footer m_20" to={Paths.PASSWORD.RESET}>
+        Забыли пароль
       </NavLink>
     </form>
   );
