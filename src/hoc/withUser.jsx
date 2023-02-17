@@ -7,7 +7,7 @@ import Preloader from '../components/ui/Preloader';
 import useUser from '../hook/useUser';
 import { useGetUserMutation } from '../store';
 
-export default function withUser( Page, shouldBeAuthorized = true) {
+export default function withUser(Page, shouldBeAuthorized = true) {
   return function WithUser(pageProps) {
     const handleErrors = useErrorHandler();
     let userData = useUser();

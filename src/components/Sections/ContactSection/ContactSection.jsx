@@ -33,7 +33,7 @@ export default function ContactSection() {
         ))}
 
         <Button
-          style="button_contact"
+          style="button_contact m_20"
           handler={handlerButton}
           text="Подписаться"
           handlerChange={handlerChange}

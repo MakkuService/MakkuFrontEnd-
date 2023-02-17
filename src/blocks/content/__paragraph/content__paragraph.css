@@ -12,6 +12,8 @@
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .content__paragraph {
     text-align: center;
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 

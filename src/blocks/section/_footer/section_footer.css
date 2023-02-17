@@ -16,38 +16,13 @@
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .section_footer {
     flex-direction: column;
-    margin: 43px 0 0;
+    margin: 0;
+    padding-bottom: 10px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .section_footer {
     margin: 43px 0 0;
-  }
-}
-
-@media screen and (max-width: 319px) {
-  .section_footer {
-
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 479px) {
-  .section_footer {
-    flex-direction: column;
-    margin: 10px 0;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 768px) {
-  .section_footer {
-    margin: 20px 0;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .section_footer {
-    margin-left: 0;
-    margin-right: 0;
   }
 }
