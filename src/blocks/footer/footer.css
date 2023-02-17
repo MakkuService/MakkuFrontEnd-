@@ -8,3 +8,24 @@
   margin: 0;
   padding: 0;
 }
+
+@media screen and (max-width: 319px) {
+  .footer {
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .footer {
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .footer {
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .footer {
+  }
+}

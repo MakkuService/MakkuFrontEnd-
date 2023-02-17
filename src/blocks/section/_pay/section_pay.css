@@ -15,8 +15,10 @@
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .section_pay {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;    
   }
 }
 
