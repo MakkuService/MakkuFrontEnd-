@@ -28,11 +28,13 @@
   .button_black {
     height: 46px;
     font-size: 14px;
+    padding: 14px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .button_black {
+
   }
 }
 

@@ -7,6 +7,7 @@ import { Card, Button } from '../../ui';
 
 import Paths from '../../../utils/paths';
 import array from '../../../mock/array';
+
 import 'swiper/css';
 
 export default function CarouselSection() {

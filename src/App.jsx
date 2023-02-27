@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Paths from '../../utils/paths';
+import Paths from './utils/paths';
 
 import {
   MainPage,
@@ -14,7 +14,7 @@ import {
   OauthPage,
   ComponetsPage,
   ProfilePage,
-} from '../../Pages'
+} from './Pages'
 
 export default function App() {
   return (

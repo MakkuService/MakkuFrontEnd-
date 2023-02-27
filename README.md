@@ -17,7 +17,6 @@
 ### Demo
 [![Netlify](https://img.shields.io/badge/-Netlify-black?style=flat-square&logo=netlify)](https://stellar-custard-0d637a.netlify.app/)
 
-
 ### Installation
 
 - Clone the repository on your computer: `git clone https://github.com/MakkuService/MakkuFrontEnd-.git`
@@ -58,3 +57,7 @@
 - [ ] Confirm, Reset password page
 - [ ] User page, Edit-user page
 - [ ] Oauth page
+- [ ] JS -> TS
+- [ ] Tests
+- [ ] Docker
+- [ ] CI/CD GitHub Actions
